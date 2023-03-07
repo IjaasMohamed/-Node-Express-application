@@ -6,10 +6,15 @@ const path = require('path');
 
 const app = express();
 
+const connectDB = require('./server/database/connection');
+
 dotenv.config({ path: 'config.env' });
 const PORT = process.env.PORT || 8080; // store in env file // if the value is not available, then use the default port
 //log request
 app.use(morgan('tiny'));
+
+//mongoDB connection
+connectDB();
 
 //pass request to body parser
 app.use(bodyparser.urlencoded({ extended: true }));
