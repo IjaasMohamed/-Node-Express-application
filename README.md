@@ -18,3 +18,12 @@ Requirements -
   
   • Need to validate parameters and its data on the API side
 
+Packages installed - 
+  express - to develop the node app
+  morgan - middleware
+  nodemon - auto restart server
+  ejs - template engine(create dynamic HTML template)
+  body-parser - allows serialization and access form data using body propert
+  dotenv - allows to seperate the source code with other/ colloborative
+  mongoose - connect with mondo DB
+  axios - make request easily
