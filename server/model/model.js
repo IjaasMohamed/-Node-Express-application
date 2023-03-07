@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-//mongoose schema allows to create shape and content
 var schema = new mongoose.Schema({
   name: {
     type: String,
@@ -12,7 +11,7 @@ var schema = new mongoose.Schema({
     unique: true,
   },
   gender: String,
-  status: string,
+  status: String,
 });
 
 const Userdb = mongoose.model('userdb', schema);
